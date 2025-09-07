@@ -7,6 +7,7 @@ from tensorflow.keras.models import load_model
 # Load model & scaler
 model = load_model("main/iris_ann_model.h5")
 scaler = joblib.load("main/iris_scaler.pkl")
+model.save("iris_ann_model.keras")
 
 # Classes
 classes = ["Setosa", "Versicolor", "Virginica"]
@@ -41,5 +42,6 @@ if st.button("Predict"):
         class_idx = np.argmax(prediction)
 
         st.success(f"✅ Predicted Flower: **{classes[class_idx]}** 🌸")
+
 
 
