@@ -1,5 +1,6 @@
-tensorflow==2.15.0
-keras==2.15.0
-joblib
 streamlit
+tensorflow>=2.16.0,<2.21.0
+scikit-learn
+pandas
 numpy
+joblib
