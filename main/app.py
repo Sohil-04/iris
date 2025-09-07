@@ -5,7 +5,7 @@ import joblib
 from tensorflow.keras.models import load_model
 
 # Load model & scaler
-model = load_model("iris_ann_model.h5")
+model = load_model("iris_ann_model.keras")   # ✅ use .keras format
 scaler = joblib.load("iris_scaler.pkl")
 
 # Classes
